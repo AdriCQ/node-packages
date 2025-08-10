@@ -16,17 +16,17 @@ format:
 
 .PHONY: unpublish
 unpublish:
-	@pnpm unpublish @adricq/billing --force --registry https://verdaccio.adricq.com
-	# @pnpm unpublish @adricq/booking --force --registry https://verdaccio.adricq.com
-	@pnpm unpublish @adricq/common --force --registry https://verdaccio.adricq.com
-	@pnpm unpublish @adricq/market --force --registry https://verdaccio.adricq.com
+	@pnpm unpublish @adricq/payment --force
+	# @pnpm unpublish @adricq/booking --force
+	@pnpm unpublish @adricq/common --force
+	@pnpm unpublish @adricq/market --force
 
 .PHONY: publish
 publish: build
-	@pnpm publish ./packages/billing --no-git-checks --registry https://verdaccio.adricq.com
-	# @pnpm publish ./packages/booking --no-git-checks --registry https://verdaccio.adricq.com
-	@pnpm publish ./packages/common --no-git-checks --registry https://verdaccio.adricq.com
-	@pnpm publish ./packages/market --no-git-checks --registry https://verdaccio.adricq.com
+	@pnpm publish ./packages/payment --no-git-checks
+	# @pnpm publish ./packages/booking --no-git-checks
+	@pnpm publish ./packages/common --no-git-checks
+	@pnpm publish ./packages/market --no-git-checks
 
 .PHONY: fresh-publish
 fresh-publish: unpublish publish
