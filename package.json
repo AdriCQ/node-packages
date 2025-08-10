@@ -1,0 +1,45 @@
+{
+  "name": "@adricq/node",
+  "version": "0.0.1",
+  "description": "AdriCQ node package",
+  "main": "./dist/main.js",
+  "module": "./dist/main.mjs",
+  "types": "./dist/main.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "adricq",
+    "service"
+  ],
+  "author": "adriancapote95@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsup",
+    "lint": "eslint ./src --ext .ts",
+    "lint:fix": "eslint ./src --ext .ts --fix",
+    "format": "prettier --write \"./src/**/*.ts\""
+  },
+  "dependencies": {
+    "axios": "^1.7.9"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
+    "@typescript-eslint/eslint-plugin": "^8.26.1",
+    "@typescript-eslint/parser": "^8.26.1",
+    "eslint": "^9.22.0",
+    "eslint-config-prettier": "^10.1.1",
+    "globals": "^16.0.0",
+    "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.26.1"
+  },
+  "engines": {
+    "node": "^28 || ^26 || ^24 || ^22 || ^20 || ^18",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}

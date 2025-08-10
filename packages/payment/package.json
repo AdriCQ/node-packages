@@ -1,0 +1,28 @@
+{
+  "name": "@adricq/payment",
+  "version": "0.0.1",
+  "description": "AdriCQ Payment package",
+  "main": "./dist/main.js",
+  "module": "./dist/main.mjs",
+  "types": "./dist/main.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "api",
+    "adricq",
+    "payment",
+    "service"
+  ],
+  "author": "adriancapote95@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsup",
+    "lint": "eslint ./src --ext .ts",
+    "lint:fix": "eslint ./src --ext .ts --fix",
+    "format": "prettier --write \"./src/**/*.ts\""
+  },
+  "engines": {
+    "node": "^22"
+  }
+}
