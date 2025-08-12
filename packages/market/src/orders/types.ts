@@ -57,3 +57,7 @@ export interface IItemCreate {
   offer_id: string
   quantity: number
 }
+
+export interface IOrderFilter {
+  status?: OrderStatus
+}

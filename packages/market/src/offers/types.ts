@@ -43,4 +43,5 @@ export interface IOfferFilter extends IPaginationParams {
   search?: string
   category?: string
   customer_id?: string
+  store_id?: string
 }

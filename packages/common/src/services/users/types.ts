@@ -45,3 +45,22 @@ export interface IUserAuthResponse {
   data: IUser
   token: string
 }
+
+export interface IUserForgotPasswordRequest {
+  email: string | undefined
+  phone: string | undefined
+}
+
+export interface IUserForgotPasswordResponse {
+  token: string
+}
+
+export interface IUserResetPasswordRequest {
+  email: string | undefined
+  phone: string | undefined
+  token: string
+  password: string
+  password_confirmation: string
+}
+
+export type IUserResetPasswordResponse = IUserAuthResponse

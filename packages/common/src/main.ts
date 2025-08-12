@@ -1,4 +1,6 @@
 /** Services */
+export * from './services/app/service'
+export * from './services/app/types'
 export * from './services/users/service'
 export * from './services/users/types'
 /** Types */
